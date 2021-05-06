@@ -1,0 +1,21 @@
+<html>
+<body>
+<p> Señor <output name="nombre"></output> </p>
+<p> El numero: <strong>{{numtres1}}</strong></p>
+    <ul>
+        {% if numtres1 == "5" %}
+            <p> Es el correcto. Felicidades </p>
+            <p> Lo ha logrado al tercer intento.</p>
+        {% else %}
+            <p> No es el numero correcto </p>
+            <p> </p>
+            <p> Oportunidad No. 4 </p>
+            <p> </p>
+            <form action="/oportunidadcuarta/" method="GET">
+                <p>Intento 4:<input type="text" name="cuarta"></p>
+                <input type="submit" value="Probar...">
+            </form>
+        {% endif %}
+    </ul>
+</body>
+</html>
